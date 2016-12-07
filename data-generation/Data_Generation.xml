@@ -506,7 +506,7 @@
       <config>
         <bulletinLevel>WARN</bulletinLevel>
         <comments></comments>
-        <concurrentlySchedulableTaskCount>3</concurrentlySchedulableTaskCount>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
         <descriptors>
           <entry>
             <key>URL</key>
