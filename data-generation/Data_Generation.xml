@@ -128,6 +128,27 @@
       </source>
       <zIndex>0</zIndex>
     </connections>
+    <connections>
+      <id>dab31b42-0158-1000-0000-000000000000</id>
+      <parentGroupId>b14e62fe-0158-1000-0000-000000000000</parentGroupId>
+      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+      <destination>
+        <groupId>d83d1f30-0158-1000-0000-000000000000</groupId>
+        <id>d83df90d-0158-1000-ffff-ffffe9f67fa8</id>
+        <type>REMOTE_INPUT_PORT</type>
+      </destination>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+      <labelIndex>1</labelIndex>
+      <name></name>
+      <selectedRelationships>success</selectedRelationships>
+      <source>
+        <groupId>b14e62fe-0158-1000-0000-000000000000</groupId>
+        <id>882277d7-0158-1000-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </source>
+      <zIndex>0</zIndex>
+    </connections>
     <funnels>
       <id>acb39498-0158-1000-0000-000000000000</id>
       <parentGroupId>b14e62fe-0158-1000-0000-000000000000</parentGroupId>
@@ -485,7 +506,7 @@
       <config>
         <bulletinLevel>WARN</bulletinLevel>
         <comments></comments>
-        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <concurrentlySchedulableTaskCount>3</concurrentlySchedulableTaskCount>
         <descriptors>
           <entry>
             <key>URL</key>
@@ -886,12 +907,38 @@
       </config>
       <name>Get PCAP Files</name>
       <relationships>
-        <autoTerminate>true</autoTerminate>
+        <autoTerminate>false</autoTerminate>
         <name>success</name>
       </relationships>
       <style></style>
       <type>org.apache.nifi.processors.standard.GetFile</type>
     </processors>
+    <remoteProcessGroups>
+      <id>d83d1f30-0158-1000-0000-000000000000</id>
+      <parentGroupId>b14e62fe-0158-1000-0000-000000000000</parentGroupId>
+      <position>
+        <x>991.7220961945486</x>
+        <y>633.9911805220345</y>
+      </position>
+      <communicationsTimeout>30 sec</communicationsTimeout>
+      <contents>
+        <inputPorts>
+          <concurrentlySchedulableTaskCount>4</concurrentlySchedulableTaskCount>
+          <connected>true</connected>
+          <exists>true</exists>
+          <id>d83df90d-0158-1000-ffff-ffffe9f67fa8</id>
+          <name>Generated Data</name>
+          <targetRunning>true</targetRunning>
+          <transmitting>true</transmitting>
+          <useCompression>false</useCompression>
+        </inputPorts>
+      </contents>
+      <proxyHost></proxyHost>
+      <proxyUser></proxyUser>
+      <targetUri>https://m10wn05.localdomain:9091/nifi</targetUri>
+      <transportProtocol>HTTP</transportProtocol>
+      <yieldDuration>1 sec</yieldDuration>
+    </remoteProcessGroups>
   </snippet>
-  <timestamp>11/29/2016 16:05:13 EST</timestamp>
+  <timestamp>12/07/2016 15:24:03 EST</timestamp>
 </template>

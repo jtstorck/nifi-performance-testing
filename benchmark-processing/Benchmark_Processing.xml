@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<template encoding-version="1.0">
+  <description></description>
+  <groupId>7c84501d-d10c-407c-b9f3-1d80e38fe36a</groupId>
+  <name>Benchmark Processing</name>
+  <snippet>
+    <connections>
+      <id>d83f7763-0158-1000-0000-000000000000</id>
+      <parentGroupId>7c84501d-d10c-407c-0000-000000000000</parentGroupId>
+      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+      <destination>
+        <groupId>7c84501d-d10c-407c-0000-000000000000</groupId>
+        <id>d83f2794-0158-1000-0000-000000000000</id>
+        <type>PROCESSOR</type>
+      </destination>
+      <flowFileExpiration>0 sec</flowFileExpiration>
+      <labelIndex>1</labelIndex>
+      <name></name>
+      <source>
+        <groupId>7c84501d-d10c-407c-0000-000000000000</groupId>
+        <id>d83df90d-0158-1000-0000-000000000000</id>
+        <type>INPUT_PORT</type>
+      </source>
+      <zIndex>0</zIndex>
+    </connections>
+    <inputPorts>
+      <id>d83df90d-0158-1000-0000-000000000000</id>
+      <parentGroupId>7c84501d-d10c-407c-0000-000000000000</parentGroupId>
+      <position>
+        <x>0.0</x>
+        <y>0.0</y>
+      </position>
+      <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+      <name>Generated Data</name>
+      <state>RUNNING</state>
+      <transmitting>false</transmitting>
+      <type>INPUT_PORT</type>
+    </inputPorts>
+    <processors>
+      <id>d83f2794-0158-1000-0000-000000000000</id>
+      <parentGroupId>7c84501d-d10c-407c-0000-000000000000</parentGroupId>
+      <position>
+        <x>152.0</x>
+        <y>230.0</y>
+      </position>
+      <config>
+        <bulletinLevel>WARN</bulletinLevel>
+        <comments></comments>
+        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+        <descriptors>
+          <entry>
+            <key>Hash Attribute Name</key>
+            <value>
+              <name>Hash Attribute Name</name>
+            </value>
+          </entry>
+          <entry>
+            <key>Hash Algorithm</key>
+            <value>
+              <name>Hash Algorithm</name>
+            </value>
+          </entry>
+        </descriptors>
+        <executionNode>ALL</executionNode>
+        <lossTolerant>false</lossTolerant>
+        <penaltyDuration>30 sec</penaltyDuration>
+        <properties>
+          <entry>
+            <key>Hash Attribute Name</key>
+            <value>hash.value</value>
+          </entry>
+          <entry>
+            <key>Hash Algorithm</key>
+            <value>MD5</value>
+          </entry>
+        </properties>
+        <runDurationMillis>0</runDurationMillis>
+        <schedulingPeriod>0 sec</schedulingPeriod>
+        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+        <yieldDuration>1 sec</yieldDuration>
+      </config>
+      <name>HashContent</name>
+      <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>failure</name>
+      </relationships>
+      <relationships>
+        <autoTerminate>true</autoTerminate>
+        <name>success</name>
+      </relationships>
+      <style></style>
+      <type>org.apache.nifi.processors.standard.HashContent</type>
+    </processors>
+  </snippet>
+  <timestamp>12/07/2016 15:25:11 EST</timestamp>
+</template>
