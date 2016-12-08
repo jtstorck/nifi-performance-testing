@@ -179,7 +179,7 @@
       <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
       <name>Generated Data 2</name>
       <state>RUNNING</state>
-      <transmitting>true</transmitting>
+      <transmitting>false</transmitting>
       <type>INPUT_PORT</type>
     </inputPorts>
     <processors>
@@ -474,5 +474,5 @@
       <type>org.apache.nifi.processors.standard.LogAttribute</type>
     </processors>
   </snippet>
-  <timestamp>12/08/2016 16:52:19 EST</timestamp>
+  <timestamp>12/08/2016 17:25:49 EST</timestamp>
 </template>
