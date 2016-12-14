@@ -302,8 +302,8 @@
           <backPressureObjectThreshold>10000</backPressureObjectThreshold>
           <destination>
             <groupId>ff3baafd-0158-1000-0000-000000000000</groupId>
-            <id>ff25a80a-0158-1000-0000-000000000000</id>
-            <type>FUNNEL</type>
+            <id>9e1f3fc5-57b6-1a05-0000-000000000000</id>
+            <type>PROCESSOR</type>
           </destination>
           <flowFileExpiration>0 sec</flowFileExpiration>
           <labelIndex>1</labelIndex>
@@ -322,11 +322,11 @@
           <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
           <backPressureObjectThreshold>10000</backPressureObjectThreshold>
           <bends>
-            <x>458.91850910778135</x>
+            <x>386.82219563121885</x>
             <y>783.336127880676</y>
           </bends>
           <bends>
-            <x>458.91850910778135</x>
+            <x>386.82219563121885</x>
             <y>833.336127880676</y>
           </bends>
           <destination>
@@ -352,11 +352,11 @@
           <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
           <backPressureObjectThreshold>10000</backPressureObjectThreshold>
           <bends>
-            <x>1222.0203462659845</x>
+            <x>1305.331503492547</x>
             <y>785.2598949705198</y>
           </bends>
           <bends>
-            <x>1222.0203462659845</x>
+            <x>1305.331503492547</x>
             <y>835.2598949705198</y>
           </bends>
           <destination>
@@ -377,7 +377,7 @@
           <zIndex>0</zIndex>
         </connections>
         <connections>
-          <id>271c3cc8-d391-1471-0000-000000000000</id>
+          <id>ff673669-0158-1000-0000-000000000000</id>
           <parentGroupId>ff3baafd-0158-1000-0000-000000000000</parentGroupId>
           <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
           <backPressureObjectThreshold>10000</backPressureObjectThreshold>
@@ -385,6 +385,48 @@
             <groupId>ff3baafd-0158-1000-0000-000000000000</groupId>
             <id>ff25a80a-0158-1000-0000-000000000000</id>
             <type>FUNNEL</type>
+          </destination>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+          <labelIndex>1</labelIndex>
+          <name></name>
+          <selectedRelationships>success</selectedRelationships>
+          <source>
+            <groupId>ff3baafd-0158-1000-0000-000000000000</groupId>
+            <id>ff664c90-0158-1000-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </source>
+          <zIndex>0</zIndex>
+        </connections>
+        <connections>
+          <id>ff679d95-0158-1000-0000-000000000000</id>
+          <parentGroupId>ff3baafd-0158-1000-0000-000000000000</parentGroupId>
+          <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+          <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+          <destination>
+            <groupId>ff3baafd-0158-1000-0000-000000000000</groupId>
+            <id>ff25a80a-0158-1000-0000-000000000000</id>
+            <type>FUNNEL</type>
+          </destination>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+          <labelIndex>1</labelIndex>
+          <name></name>
+          <selectedRelationships>success</selectedRelationships>
+          <source>
+            <groupId>ff3baafd-0158-1000-0000-000000000000</groupId>
+            <id>9e1f3fc5-57b6-1a05-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </source>
+          <zIndex>0</zIndex>
+        </connections>
+        <connections>
+          <id>271c3cc8-d391-1471-0000-000000000000</id>
+          <parentGroupId>ff3baafd-0158-1000-0000-000000000000</parentGroupId>
+          <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+          <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+          <destination>
+            <groupId>ff3baafd-0158-1000-0000-000000000000</groupId>
+            <id>ff664c90-0158-1000-0000-000000000000</id>
+            <type>PROCESSOR</type>
           </destination>
           <flowFileExpiration>0 sec</flowFileExpiration>
           <labelIndex>1</labelIndex>
@@ -406,10 +448,60 @@
           </position>
         </funnels>
         <processors>
+          <id>9e1f3fc5-57b6-1a05-0000-000000000000</id>
+          <parentGroupId>ff3baafd-0158-1000-0000-000000000000</parentGroupId>
+          <position>
+            <x>851.7473218495837</x>
+            <y>978.1914976339656</y>
+          </position>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>Delete Attributes Expression</key>
+                <value>
+                  <name>Delete Attributes Expression</name>
+                </value>
+              </entry>
+              <entry>
+                <key>filename</key>
+                <value>
+                  <name>filename</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>Delete Attributes Expression</key>
+              </entry>
+              <entry>
+                <key>filename</key>
+                <value>users-${UUID()}.json</value>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>Update Filename for JSON</name>
+          <relationships>
+            <autoTerminate>false</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <style></style>
+          <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+        </processors>
+        <processors>
           <id>ff34f984-0158-1000-0000-000000000000</id>
           <parentGroupId>ff3baafd-0158-1000-0000-000000000000</parentGroupId>
           <position>
-            <x>3.9185091077813468</x>
+            <x>-68.17780436878115</x>
             <y>743.336127880676</y>
           </position>
           <config>
@@ -684,10 +776,60 @@
           <type>org.apache.nifi.processors.standard.InvokeHTTP</type>
         </processors>
         <processors>
+          <id>ff664c90-0158-1000-0000-000000000000</id>
+          <parentGroupId>ff3baafd-0158-1000-0000-000000000000</parentGroupId>
+          <position>
+            <x>-68.84899162697877</x>
+            <y>978.8257749777156</y>
+          </position>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>Delete Attributes Expression</key>
+                <value>
+                  <name>Delete Attributes Expression</name>
+                </value>
+              </entry>
+              <entry>
+                <key>filename</key>
+                <value>
+                  <name>filename</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>Delete Attributes Expression</key>
+              </entry>
+              <entry>
+                <key>filename</key>
+                <value>users-${UUID()}.csv</value>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>Update Filename for CSV</name>
+          <relationships>
+            <autoTerminate>false</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <style></style>
+          <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+        </processors>
+        <processors>
           <id>271c3cc3-d391-1471-0000-000000000000</id>
           <parentGroupId>ff3baafd-0158-1000-0000-000000000000</parentGroupId>
           <position>
-            <x>767.0203462659845</x>
+            <x>850.331503492547</x>
             <y>745.2598949705198</y>
           </position>
           <config>
@@ -1996,5 +2138,5 @@
       <yieldDuration>1 sec</yieldDuration>
     </remoteProcessGroups>
   </snippet>
-  <timestamp>12/14/2016 17:03:52 EST</timestamp>
+  <timestamp>12/14/2016 17:16:57 EST</timestamp>
 </template>
