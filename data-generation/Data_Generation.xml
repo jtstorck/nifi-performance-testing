@@ -270,8 +270,8 @@
       <id>ff3baafd-0158-1000-0000-000000000000</id>
       <parentGroupId>b14e62fe-0158-1000-0000-000000000000</parentGroupId>
       <position>
-        <x>91.60161457653135</x>
-        <y>598.0112499691404</y>
+        <x>0.7032991468438468</x>
+        <y>644.1819042660154</y>
       </position>
       <comments></comments>
       <contents>
@@ -993,7 +993,7 @@
               </entry>
               <entry>
                 <key>Remote URL</key>
-                <value>http://m10wn05.localdomain/sample-data/json.csv</value>
+                <value>http://m10wn05.localdomain/sample-data/users.json</value>
               </entry>
               <entry>
                 <key>SSL Context Service</key>
@@ -1114,32 +1114,12 @@
           <contents>
             <inputPorts>
               <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-              <connected>false</connected>
-              <exists>true</exists>
-              <id>d83df90d-0158-1000-ffff-ffffe9f67fa8</id>
-              <name>Generated Data</name>
-              <targetRunning>true</targetRunning>
-              <transmitting>false</transmitting>
-              <useCompression>false</useCompression>
-            </inputPorts>
-            <inputPorts>
-              <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
               <connected>true</connected>
               <exists>true</exists>
               <id>5a5c358c-9e0f-185f-ffff-ffffbb60abf7</id>
               <name>Sample User Data</name>
               <targetRunning>true</targetRunning>
               <transmitting>true</transmitting>
-              <useCompression>false</useCompression>
-            </inputPorts>
-            <inputPorts>
-              <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-              <connected>false</connected>
-              <exists>true</exists>
-              <id>df738d13-0158-1000-ffff-ffffb5a318e7</id>
-              <name>Generated Data 2</name>
-              <targetRunning>true</targetRunning>
-              <transmitting>false</transmitting>
               <useCompression>false</useCompression>
             </inputPorts>
           </contents>
@@ -1585,8 +1565,8 @@
       <id>881ce06b-0158-1000-0000-000000000000</id>
       <parentGroupId>b14e62fe-0158-1000-0000-000000000000</parentGroupId>
       <position>
-        <x>627.390149339365</x>
-        <y>391.1435056897243</y>
+        <x>1.2010013901463026</x>
+        <y>477.71339094363054</y>
       </position>
       <config>
         <bulletinLevel>WARN</bulletinLevel>
@@ -2064,26 +2044,6 @@
           <transmitting>true</transmitting>
           <useCompression>false</useCompression>
         </inputPorts>
-        <inputPorts>
-          <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-          <connected>false</connected>
-          <exists>true</exists>
-          <id>5a5c358c-9e0f-185f-ffff-ffffbb60abf7</id>
-          <name>Sample User Data</name>
-          <targetRunning>true</targetRunning>
-          <transmitting>false</transmitting>
-          <useCompression>false</useCompression>
-        </inputPorts>
-        <inputPorts>
-          <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-          <connected>false</connected>
-          <exists>true</exists>
-          <id>df738d13-0158-1000-ffff-ffffb5a318e7</id>
-          <name>Generated Data 2</name>
-          <targetRunning>true</targetRunning>
-          <transmitting>false</transmitting>
-          <useCompression>false</useCompression>
-        </inputPorts>
       </contents>
       <proxyHost></proxyHost>
       <proxyUser></proxyUser>
@@ -2101,6 +2061,7 @@
       <communicationsTimeout>30 sec</communicationsTimeout>
       <contents>
         <inputPorts>
+          <comments></comments>
           <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
           <connected>false</connected>
           <exists>true</exists>
@@ -2111,6 +2072,7 @@
           <useCompression>false</useCompression>
         </inputPorts>
         <inputPorts>
+          <comments></comments>
           <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
           <connected>false</connected>
           <exists>true</exists>
@@ -2121,6 +2083,7 @@
           <useCompression>false</useCompression>
         </inputPorts>
         <inputPorts>
+          <comments></comments>
           <concurrentlySchedulableTaskCount>4</concurrentlySchedulableTaskCount>
           <connected>true</connected>
           <exists>true</exists>
@@ -2138,5 +2101,5 @@
       <yieldDuration>1 sec</yieldDuration>
     </remoteProcessGroups>
   </snippet>
-  <timestamp>12/14/2016 17:16:57 EST</timestamp>
+  <timestamp>12/16/2016 15:07:44 EST</timestamp>
 </template>
