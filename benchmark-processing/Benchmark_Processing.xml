@@ -2,7 +2,7 @@
 <template encoding-version="1.0">
   <description></description>
   <groupId>7c84501d-d10c-407c-b9f3-1d80e38fe36a</groupId>
-  <name>Benchmark Processing</name>
+  <name>Benchmark Performance</name>
   <snippet>
     <connections>
       <id>d83f7763-0158-1000-0000-000000000000</id>
@@ -11,8 +11,8 @@
       <backPressureObjectThreshold>10000</backPressureObjectThreshold>
       <destination>
         <groupId>7c84501d-d10c-407c-0000-000000000000</groupId>
-        <id>df73b7c6-0158-1000-0000-000000000000</id>
-        <type>FUNNEL</type>
+        <id>df5d75fb-0158-1000-0000-000000000000</id>
+        <type>PROCESSOR</type>
       </destination>
       <flowFileExpiration>0 sec</flowFileExpiration>
       <labelIndex>1</labelIndex>
@@ -109,26 +109,6 @@
       <zIndex>0</zIndex>
     </connections>
     <connections>
-      <id>df7404eb-0158-1000-0000-000000000000</id>
-      <parentGroupId>7c84501d-d10c-407c-0000-000000000000</parentGroupId>
-      <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-      <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-      <destination>
-        <groupId>7c84501d-d10c-407c-0000-000000000000</groupId>
-        <id>df5d75fb-0158-1000-0000-000000000000</id>
-        <type>PROCESSOR</type>
-      </destination>
-      <flowFileExpiration>0 sec</flowFileExpiration>
-      <labelIndex>1</labelIndex>
-      <name></name>
-      <source>
-        <groupId>7c84501d-d10c-407c-0000-000000000000</groupId>
-        <id>df73b7c6-0158-1000-0000-000000000000</id>
-        <type>FUNNEL</type>
-      </source>
-      <zIndex>0</zIndex>
-    </connections>
-    <connections>
       <id>5a5c358e-9e0f-185f-0000-000000000000</id>
       <parentGroupId>7c84501d-d10c-407c-0000-000000000000</parentGroupId>
       <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
@@ -148,34 +128,26 @@
       </source>
       <zIndex>0</zIndex>
     </connections>
-    <funnels>
-      <id>df73b7c6-0158-1000-0000-000000000000</id>
-      <parentGroupId>7c84501d-d10c-407c-0000-000000000000</parentGroupId>
-      <position>
-        <x>146.4342685340016</x>
-        <y>136.81668659191314</y>
-      </position>
-    </funnels>
     <inputPorts>
       <id>d83df90d-0158-1000-0000-000000000000</id>
       <parentGroupId>7c84501d-d10c-407c-0000-000000000000</parentGroupId>
       <position>
-        <x>51.1396484375</x>
+        <x>55.61474609375</x>
         <y>0.0</y>
       </position>
       <comments></comments>
       <concurrentlySchedulableTaskCount>16</concurrentlySchedulableTaskCount>
       <name>Generated Data</name>
       <state>RUNNING</state>
-      <transmitting>false</transmitting>
+      <transmitting>true</transmitting>
       <type>INPUT_PORT</type>
     </inputPorts>
     <inputPorts>
       <id>5a5c358c-9e0f-185f-0000-000000000000</id>
       <parentGroupId>7c84501d-d10c-407c-0000-000000000000</parentGroupId>
       <position>
-        <x>850.4057046201315</x>
-        <y>0.48193060279592714</y>
+        <x>1565.514957549819</x>
+        <y>28.227108825452177</y>
       </position>
       <comments></comments>
       <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
@@ -188,8 +160,8 @@
       <id>5a5c350d-9e0f-185f-0000-000000000000</id>
       <parentGroupId>7c84501d-d10c-407c-0000-000000000000</parentGroupId>
       <position>
-        <x>782.1126427550048</x>
-        <y>186.57704311126776</y>
+        <x>1497.2218956846923</x>
+        <y>214.322221333924</y>
       </position>
       <comments></comments>
       <contents>
@@ -594,12 +566,14 @@
             </entry>
             <entry>
               <key>Server Port</key>
+              <value>4557</value>
             </entry>
             <entry>
               <key>SSL Context Service</key>
             </entry>
             <entry>
               <key>Communications Timeout</key>
+              <value>30 secs</value>
             </entry>
           </properties>
           <state>ENABLED</state>
@@ -2352,5 +2326,5 @@
       <type>org.apache.nifi.processors.standard.LogAttribute</type>
     </processors>
   </snippet>
-  <timestamp>01/06/2017 12:24:25 EST</timestamp>
+  <timestamp>01/31/2017 12:09:55 EST</timestamp>
 </template>
